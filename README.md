@@ -5,7 +5,6 @@ author: msonecode
 ---
 
 # How to build ASP.NET Core application to Docker images in VSTS
-
 ## Introduction:
 
 This example demonstrates how to build an ASP.NET Core Application to a Docker image and run the Docker container in VSTS.
@@ -62,13 +61,13 @@ If you’re using Visual Studio:
     WORKDIR /app
     COPY netcore/src/netcore/out .
     ENTRYPOINT ["dotnet", "netcore.dll"]
-This example assumes the project is structured as follows and the application is named “netcore”:
+This example assumes the project is structured as following and the application is named as “netcore”:
 
 ![4](https://raw.githubusercontent.com/shaqian/Docker-VSTS/master/4.png)
 
 ***5. (Optional) Update the application from Microsoft.NETCore.App 1.0.1 to 1.1.0***
 
-Right click on your project, click **Manage NuGet Packages**, click **Updates** and update.
+Right click on your project, click **Manage NuGet Packages**, click **Updates** to start updating.
 
 ***6. (Optional) Edit project.json if the application is updated to Microsoft.NETCore.App 1.1.0***
 ```shell
